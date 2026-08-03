@@ -226,4 +226,23 @@
   window.addEventListener('load', navmenuScrollspy);
   document.addEventListener('scroll', navmenuScrollspy);
 
+  /**
+   * Project filters (Academic & Systems Projects section)
+   */
+  const projectFilters = document.querySelectorAll('.project-filters li');
+  const projectCols = document.querySelectorAll('.project-col');
+
+  projectFilters.forEach((filterBtn) => {
+    filterBtn.addEventListener('click', function() {
+      projectFilters.forEach(btn => btn.classList.remove('filter-active'));
+      this.classList.add('filter-active');
+
+      const filter = this.getAttribute('data-filter');
+      projectCols.forEach((col) => {
+        const show = filter === 'all' || col.getAttribute('data-category') === filter;
+        col.classList.toggle('d-none', !show);
+      });
+    });
+  });
+
 })();

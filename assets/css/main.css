@@ -1273,3 +1273,129 @@ section,
 .starter-section {
   /* Add your styles here */
 }
+
+/*--------------------------------------------------------------
+# Custom Enhancements - Status Badge, Publications, Tags & Filters
+--------------------------------------------------------------*/
+.about .content .status-badge {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 7px 16px;
+  border-radius: 30px;
+  background: color-mix(in srgb, var(--accent-color), transparent 88%);
+  color: var(--accent-color);
+  margin-top: 15px;
+}
+
+.about .content .status-badge i {
+  color: #2ecc71;
+  margin-right: 4px;
+}
+
+.publications .pub-item {
+  background-color: var(--surface-color);
+  padding: 25px;
+  border-radius: 8px;
+  height: 100%;
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 92%);
+  transition: 0.3s;
+}
+
+.publications .pub-item:hover {
+  box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.08);
+  transform: translateY(-4px);
+}
+
+.publications .pub-item .pub-badge {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: .3px;
+  padding: 5px 14px;
+  border-radius: 30px;
+  background: color-mix(in srgb, var(--accent-color), transparent 88%);
+  color: var(--accent-color);
+  margin-bottom: 14px;
+}
+
+.publications .pub-item h4 {
+  font-size: 17px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: var(--heading-color);
+  line-height: 1.4;
+}
+
+.publications .pub-item .pub-venue {
+  font-size: 13px;
+  color: var(--accent-color);
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.publications .pub-item p:not(.pub-venue) {
+  font-size: 14px;
+  line-height: 1.7;
+  margin: 0;
+  color: color-mix(in srgb, var(--default-color), transparent 15%);
+}
+
+.services .pub-venue {
+  font-size: 13px;
+  color: var(--accent-color);
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.services .tech-tags {
+  margin-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.services .tech-tags span {
+  font-size: 11px;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 30px;
+  background: color-mix(in srgb, var(--default-color), transparent 92%);
+  color: var(--default-color);
+}
+
+.project-filters {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 0 0 10px 0;
+  padding: 0;
+  list-style: none;
+}
+
+.project-filters li {
+  cursor: pointer;
+  padding: 8px 22px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 30px;
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 80%);
+  color: var(--default-color);
+  transition: 0.3s;
+}
+
+.project-filters li:hover,
+.project-filters li.filter-active {
+  background: var(--accent-color);
+  color: var(--contrast-color);
+  border-color: var(--accent-color);
+}
+
+.project-col {
+  transition: opacity 0.3s;
+}
+
+.project-col.d-none {
+  display: none !important;
+}
