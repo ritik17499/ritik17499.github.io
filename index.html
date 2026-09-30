@@ -1,457 +1,395 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Ritik Verma | ML Researcher &amp; Software Engineer</title>
-  <meta content="Portfolio of Ritik Verma — ML Researcher and Backend/Distributed Systems Engineer specializing in agentic AI, biosignal diffusion models, and scalable systems. M.S. Computer Science, University at Buffalo." name="description">
-  <meta content="Ritik Verma, ML Researcher, Backend Engineer, Distributed Systems, Machine Learning, Computer Science, University at Buffalo, Portfolio" name="keywords">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ritik Verma — ML Researcher &amp; Systems Engineer</title>
+  <meta name="description" content="Ritik Verma — ML researcher and backend/distributed systems engineer building agentic AI, biosignal diffusion models, and fault-tolerant systems. M.S. Computer Science, University at Buffalo.">
+  <meta name="keywords" content="Ritik Verma, ML Researcher, Backend Engineer, Distributed Systems, Agentic AI, Diffusion Models, University at Buffalo">
+  <meta property="og:title" content="Ritik Verma — ML Researcher & Systems Engineer">
+  <meta property="og:description" content="Agentic AI, biosignal diffusion models, and fault-tolerant distributed systems.">
+  <meta property="og:image" content="assets/img/ritik-portrait.jpg">
+  <meta name="theme-color" content="#efe9dc">
 
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width="64" height="64" rx="14" fill="%23201e18"/%3E%3Cpath d='M8 36h12l5-14 8 26 6-18 4 6h13' fill='none' stroke='%23e8472b' stroke-width='5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
 
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..600&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <link href="assets/css/main.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>
+    document.documentElement.classList.add('js');
+  </script>
 </head>
 
-<body class="index-page">
+<body>
+  <a class="skip" href="#main">Skip to content</a>
 
-  <header id="header" class="header dark-background d-flex flex-column">
-    <i class="header-toggle d-xl-none bi bi-list"></i>
+  <header class="bar" id="top">
+    <div class="bar__inner">
+      <a href="#top" class="mark" aria-label="Ritik Verma — home">
+        <span class="mark__glyph">RV</span>
+        <span class="mark__name">Ritik Verma</span>
+      </a>
 
-    <div class="profile-img">
-      <img src="assets/img/profile.jpg" alt="Ritik Verma" class="img-fluid rounded-circle">
+      <nav class="nav" id="nav" aria-label="Primary">
+        <a href="#about"><span>01</span>About</a>
+        <a href="#experience"><span>02</span>Experience</a>
+        <a href="#education"><span>03</span>Education</a>
+        <a href="#research"><span>04</span>Research</a>
+        <a href="#projects"><span>05</span>Projects</a>
+        <a href="#toolkit"><span>06</span>Toolkit</a>
+        <a href="#contact"><span>07</span>Contact</a>
+      </nav>
+
+      <div class="bar__tools">
+        <button class="icon-btn menu-btn" id="menuToggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav">
+          <span></span><span></span>
+        </button>
+      </div>
     </div>
-
-    <a href="index.html" class="logo d-flex align-items-center justify-content-center">
-      <h1 class="sitename">Ritik Verma</h1>
-    </a>
-
-    <div class="social-links text-center">
-      <a href="https://github.com/ritik17499" class="github" target="_blank"><i class="bi bi-github"></i></a>
-      <a href="https://linkedin.com/in/ritik-verma-749081175/" class="linkedin" target="_blank"><i class="bi bi-linkedin"></i></a>
-      <a href="mailto:ritikver@buffalo.edu" class="google"><i class="bi bi-envelope"></i> </a>
-    </div>
-
-    <nav id="navmenu" class="navmenu">
-      <ul>
-        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
-        <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
-        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
-        <li><a href="#publications"><i class="bi bi-journal-richtext navicon"></i> Publications</a></li>
-        <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i> Projects</a></li>
-        <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
-      </ul>
-    </nav>
   </header>
 
-  <main class="main">
+  <main id="main">
 
-    <section id="hero" class="hero section dark-background">
-      <img src="assets/img/background.jpg" alt="" data-aos="fade-in" class="">
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <h2>Ritik Verma</h2>
-        <p>I'm a <span class="typed" data-typed-items="ML Researcher, Backend Engineer, Distributed Systems Engineer, Agentic AI Architect">ML Researcher</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
-        <div class="hero-cta mt-4">
-          <a href="#contact" class="btn btn-primary me-2">Get In Touch</a>
-          <a href="https://drive.google.com/file/d/11T_LbtAM6Ln6sQmmbPbBvqRkMfymVMN6/view?usp=drive_link" target="_blank" class="btn btn-outline-light">Download Resume</a>
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="wrap hero__grid">
+        <div class="hero__text">
+          <p class="kicker reveal"><span class="dot"></span> Open to full-time &amp; research roles · M.S. CS, Dec 2026</p>
+          <h1 class="hero__title reveal">
+            Ritik<br><em>Verma</em>
+          </h1>
+          <p class="hero__lede reveal">
+            I build <strong>agentic AI systems</strong>, <strong>generative models for biosignals</strong>, and the <strong>fault-tolerant infrastructure</strong> they run on — from diffusion research to production backends.
+          </p>
+          <div class="hero__cta reveal">
+            <a class="btn btn--solid" href="#contact">Get in touch <span aria-hidden="true">→</span></a>
+            <a class="btn btn--line" href="https://drive.google.com/file/d/11T_LbtAM6Ln6sQmmbPbBvqRkMfymVMN6/view?usp=drive_link" target="_blank" rel="noopener">Résumé ↗</a>
+          </div>
+          <ul class="hero__roles reveal" aria-label="Roles">
+            <li>ML Researcher</li>
+            <li>Backend Engineer</li>
+            <li>Distributed Systems</li>
+            <li>Agentic AI</li>
+          </ul>
+        </div>
+
+        <figure class="portrait reveal">
+          <div class="portrait__frame">
+            <img src="assets/img/ritik-portrait.jpg" alt="Portrait of Ritik Verma at the University at Buffalo" width="935" height="1400">
+          </div>
+          <figcaption>
+            <span>Ritik Verma</span>
+            <span>Buffalo, NY</span>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============ METRICS ============ -->
+    <section class="metrics" aria-label="Highlights">
+      <div class="wrap metrics__row">
+        <div class="metric reveal">
+          <span class="metric__n" data-count="3">3</span>
+          <span class="metric__l">years of professional engineering</span>
+        </div>
+        <div class="metric reveal">
+          <span class="metric__n" data-count="4">4</span>
+          <span class="metric__l">research publications</span>
+        </div>
+        <div class="metric reveal">
+          <span class="metric__n" data-count="1">1</span>
+          <span class="metric__l">US patent filed</span>
         </div>
       </div>
-    </section><section id="about" class="about section">
-      <div class="container section-title" data-aos="fade-up">
-        <h2>About</h2>
-        <p style="margin-bottom: 20px;">Welcome! I'm Ritik Verma, a Computer Science graduate student and researcher building agentic AI systems, generative models for biosignal data, and fault-tolerant distributed systems. My work spans a state-funded multi-agent research platform, three peer-reviewed publications (IEEE EMBC, IEEE BSN, AFRL Quantum AI4), and a US patent filing — grounded in production engineering experience across backend systems, cloud infrastructure, and database internals.</p>
-        <p>I blend rigorous academic research with hands-on software engineering, using languages and frameworks ranging from Python/PyTorch for deep learning to Go and Java for scalable backend systems.</p>
-      </div>
+    </section>
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row gy-4 justify-content-center">
-          <div class="col-lg-8 content">
-            <h2>ML Researcher &amp; Backend / Distributed Systems Engineer</h2>
-            <div class="row">
-              <div class="col-lg-6">
+    <!-- ============ ABOUT ============ -->
+    <section class="section" id="about">
+      <div class="wrap split">
+        <header class="section__head reveal">
+          <span class="idx">01</span>
+          <h2>About</h2>
+        </header>
+
+        <div class="split__body">
+          <p class="lead reveal">
+            I'm a Computer Science graduate student and researcher at the University at Buffalo, working where <em>machine learning research</em> meets <em>systems engineering</em>.
+          </p>
+          <div class="prose reveal">
+            <p>My work spans a state-funded multi-agent research platform, peer-reviewed publications at IEEE EMBC, IEEE BSN and the AFRL Quantum AI4 workshop, and a US patent filing — grounded in production experience across backend systems, cloud infrastructure and database internals.</p>
+            <p>I move comfortably between Python and PyTorch for deep learning and Go or Java for scalable, fault-tolerant backends. I care about models that work outside the notebook, and systems that stay up when things go wrong.</p>
+          </div>
+
+          <dl class="facts reveal">
+            <div><dt>Based in</dt><dd>Buffalo, New York</dd></div>
+            <div><dt>Degree</dt><dd>M.S. Computer Science · Dec 2026</dd></div>
+            <div><dt>Email</dt><dd><a href="mailto:ritikver@buffalo.edu">ritikver@buffalo.edu</a></dd></div>
+            <div><dt>Phone</dt><dd>+1 (631) 366-9859</dd></div>
+            <div><dt>GitHub</dt><dd><a href="https://github.com/ritik17499" target="_blank" rel="noopener">github.com/ritik17499</a></dd></div>
+            <div><dt>LinkedIn</dt><dd><a href="https://linkedin.com/in/ritik-verma-749081175/" target="_blank" rel="noopener">ritik-verma</a></dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCE ============ -->
+    <section class="section section--tint" id="experience">
+      <div class="wrap split">
+        <header class="section__head reveal">
+          <span class="idx">02</span>
+          <h2>Experience</h2>
+        </header>
+
+        <div class="split__body">
+          <ol class="log">
+            <li class="log__item reveal">
+              <div class="log__when mono">May 2025 — Present</div>
+              <div class="log__what">
+                <h3>Research Assistant <span class="at">@ University at Buffalo</span></h3>
                 <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Location:</strong> <span>Buffalo, New York</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+1 (631) 366-9859</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>ritikver@buffalo.edu</span></li>
+                  <li><strong>AIEmoCare — agentic architecture.</strong> Architected a state-funded production platform for autonomous affective support, integrating multi-agent reasoning loops with FastAPI and React (TypeScript), deployed on Kubernetes and Docker.</li>
+                  <li><strong>Real-time perception &amp; tool execution.</strong> Engineered a 500 Hz TimescaleDB time-series pipeline that serves as state memory for agents, letting them evaluate live biosignals and trigger low-latency intervention tools.</li>
+                  <li><strong>Teaching.</strong> TA for CSE 474 — Introduction to Machine Learning.</li>
                 </ul>
+                <div class="chips"><span>FastAPI</span><span>React · TS</span><span>Kubernetes</span><span>TimescaleDB</span><span>Multi-agent</span></div>
               </div>
-              <div class="col-lg-6">
+            </li>
+
+            <li class="log__item reveal">
+              <div class="log__when mono">Jul 2024 — Nov 2024</div>
+              <div class="log__what">
+                <h3>Backend Engineer (Contract) <span class="at">@ Mercor</span></h3>
                 <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>M.S. Computer Science (Dec 2026)</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>GitHub:</strong> <span>github.com/ritik17499</span></li>
+                  <li>Lifted internal LLM benchmark accuracy by 10% with automated data-curation and hyperparameter-optimisation scripts.</li>
+                  <li>Streamlined development workflows by containerising environments.</li>
                 </ul>
+                <div class="chips"><span>Python</span><span>LLM evals</span><span>Docker</span></div>
               </div>
-            </div>
-            <span class="status-badge"><i class="bi bi-circle-fill" style="font-size:8px; vertical-align:middle;"></i> Open to Full-Time &amp; Research Opportunities</span>
-          </div>
-        </div>
-      </div>
-    </section><section id="stats" class="stats section light-background">
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row gy-4">
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item text-center w-100 h-100">
-              <i class="bi bi-briefcase"></i>
-              <span data-purecounter-start="0" data-purecounter-end="3" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Years Professional Experience</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item text-center w-100 h-100">
-              <i class="bi bi-journal-richtext"></i>
-              <span data-purecounter-start="0" data-purecounter-end="4" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Research Publications</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item text-center w-100 h-100">
-              <i class="bi bi-award"></i>
-              <span data-purecounter-start="0" data-purecounter-end="1" data-purecounter-duration="1" class="purecounter"></span>
-              <p>US Patent Filed</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item text-center w-100 h-100">
-              <i class="bi bi-graph-up-arrow"></i>
-              <span data-purecounter-start="0" data-purecounter-end="40" data-purecounter-duration="1" class="purecounter"></span>
-              <p>% Extraction Efficiency Boost Delivered</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section><section id="skills" class="skills section">
-      <div class="container" data-aos="fade-up">
-        <div class="section-title">
-          <h2>Skills</h2>
-          <p>A snapshot of core languages, frameworks, and systems I work with.</p>
-        </div>
+            </li>
 
-        <div class="row skills-content">
-          <div class="col-lg-6">
-            <div class="skills-animation" data-aos="fade-up">
-              <div class="progress">
-                <span class="skill">Python <i class="val">95%</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
+            <li class="log__item reveal">
+              <div class="log__when mono">Feb 2024 — Apr 2024</div>
+              <div class="log__what">
+                <h3>Full Stack Developer Trainee <span class="at">@ Codelogicx</span></h3>
+                <ul>
+                  <li>Built responsive e-commerce dashboards in React and Node.js, integrating REST APIs to cut page-load latency and turning Agile requirements into working UI.</li>
+                </ul>
+                <div class="chips"><span>React</span><span>Node.js</span><span>REST</span></div>
               </div>
-              <div class="progress">
-                <span class="skill">PyTorch &amp; Deep Learning <i class="val">90%</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
+            </li>
+
+            <li class="log__item reveal">
+              <div class="log__when mono">Jul 2022 — Dec 2023</div>
+              <div class="log__what">
+                <h3>Associate Software Engineer <span class="at">@ Salesforce (formerly Informatica)</span></h3>
+                <ul>
+                  <li><strong>Cloudera scanner.</strong> Built a Cloudera (Hive CDP) metadata scanner from scratch with full unit and integration coverage, integrated into the internal extraction tool.</li>
+                  <li><strong>Redshift scanner.</strong> Boosted extraction efficiency by 40%+ through WHERE-clause optimisation, added Materialized View and SSL support, and shipped customer patches.</li>
+                </ul>
+                <div class="chips"><span>Java</span><span>Hive</span><span>Redshift</span><span>JUnit · Mockito</span></div>
               </div>
-              <div class="progress">
-                <span class="skill">Go <i class="val">82%</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EDUCATION ============ -->
+    <section class="section" id="education">
+      <div class="wrap split">
+        <header class="section__head reveal">
+          <span class="idx">03</span>
+          <h2>Education</h2>
+        </header>
+
+        <div class="split__body">
+          <ol class="log">
+            <li class="log__item reveal">
+              <div class="log__when mono">Jan 2025 — Dec 2026</div>
+              <div class="log__what">
+                <h3>M.S. Computer Science <span class="at">University at Buffalo (SUNY) · Buffalo, New York</span></h3>
+                <p class="log__note">Research Assistant and Teaching Assistant for CSE 474 — Introduction to Machine Learning.</p>
+                <div class="chips"><span>Algorithms</span><span>Machine Learning</span><span>Computer Vision</span><span>Deep Learning</span><span>Distributed Systems</span><span>Data Models</span></div>
               </div>
-              <div class="progress">
-                <span class="skill">Distributed Systems (Kubernetes &amp; Docker) <i class="val">85%</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
+            </li>
+            <li class="log__item reveal">
+              <div class="log__when mono">Jul 2018 — Jun 2022</div>
+              <div class="log__what">
+                <h3>B.Tech Information Technology <span class="at">Techno Main Salt Lake · Kolkata, India</span></h3>
+                <div class="chips"><span>Data Structures</span><span>Algorithm Analysis</span><span>DBMS</span><span>Operating Systems</span><span>Computer Networks</span><span>Compiler Design</span></div>
               </div>
-            </div>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ RESEARCH ============ -->
+    <section class="section section--tint" id="research">
+      <div class="wrap split">
+        <header class="section__head reveal">
+          <span class="idx">04</span>
+          <h2>Research &amp; patents</h2>
+          <p class="section__note">Generative AI, biosignal modelling and fair ML.</p>
+        </header>
+
+        <div class="split__body">
+          <ol class="refs">
+            <li class="ref reveal">
+              <span class="ref__n mono">[1]</span>
+              <div>
+                <div class="ref__meta"><span class="tag tag--hot">Oral · Patent filed</span><span class="mono">IEEE EMBC 2026</span></div>
+                <h3>AtomSigNet: Biosignal Diffusion with Markovian Reasoning</h3>
+                <p>A Markovian reasoning engine with conditional diffusion that corrects sensor artifacts, plus a test-time scaling mechanism that adjusts compute on the fly — <b>91% SOTA accuracy</b> on WESAD/CASE (+14% F1) with <b>5× fewer labels</b>. The architecture is the subject of a filed US patent.</p>
+              </div>
+            </li>
+            <li class="ref reveal">
+              <span class="ref__n mono">[2]</span>
+              <div>
+                <div class="ref__meta"><span class="tag">Workshop</span><span class="mono">AFRL Quantum AI4 · 2026</span></div>
+                <h3>MIND-DiT: Multimodal Incremental Neural Diffusion Transformer for EEG-to-Image Synthesis</h3>
+                <p>Personalised EEG-to-image synthesis with adaptive identity evolution via few-shot incremental learning, a unified neural-visual transformer backbone and a continually evolved classifier that prevents catastrophic forgetting — <b>15–20% accuracy gain</b> over U-Net baselines.</p>
+              </div>
+            </li>
+            <li class="ref reveal">
+              <span class="ref__n mono">[3]</span>
+              <div>
+                <div class="ref__meta"><span class="tag">Conference</span><span class="mono">MHSRS · 2026</span></div>
+                <h3>Data to Decision: Optimizing Cognitive Performance for the Operational Environment</h3>
+                <p>Translating biosignal-driven cognitive-state models into decision-support tooling for operational environments, building on the AtomSigNet reasoning engine.</p>
+              </div>
+            </li>
+            <li class="ref reveal">
+              <span class="ref__n mono">[4]</span>
+              <div>
+                <div class="ref__meta"><span class="tag">Peer-reviewed</span><span class="mono">IEEE BSN · 2025</span></div>
+                <h3>AFairDNet: Fair Multisensor Emotion Recognition System</h3>
+                <p>A chain-of-thought loop that scores synthetic fairness with CLIP and entropy metrics and refactors prompts dynamically — beating SOTA baselines by <b>4% F1</b> on WESAD using only <b>1.4% synthetic data</b>.</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="section section--ink" id="projects">
+      <div class="wrap">
+        <header class="section__head section__head--row reveal">
+          <div>
+            <span class="idx">05</span>
+            <h2>Selected projects</h2>
           </div>
-          <div class="col-lg-6">
-            <div class="skills-animation" data-aos="fade-up" data-aos-delay="100">
-              <div class="progress">
-                <span class="skill">Java <i class="val">85%</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div>
-              <div class="progress">
-                <span class="skill">JavaScript &amp; React (TypeScript) <i class="val">80%</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div>
-              <div class="progress">
-                <span class="skill">SQL &amp; Data Warehousing <i class="val">85%</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div>
-              <div class="progress">
-                <span class="skill">AWS &amp; Cloud Infrastructure <i class="val">80%</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div>
-            </div>
+          <div class="filters" role="group" aria-label="Filter projects">
+            <button type="button" class="is-on" data-filter="all" aria-pressed="true">All</button>
+            <button type="button" data-filter="ml" aria-pressed="false">Machine learning</button>
+            <button type="button" data-filter="systems" aria-pressed="false">Systems</button>
+          </div>
+        </header>
+
+        <div class="projects">
+          <a class="proj proj--link proj--wide reveal" data-cat="ml" href="https://multimodal-human-sensing.github.io/motion-assessment/" target="_blank" rel="noopener">
+            <div class="proj__top"><span class="mono">01 / ML</span><span class="mono proj__go">Project page ↗</span></div>
+            <h3>Fine-grained Human Motion Assessment</h3>
+            <p>A vision-language-kinematic framework for posture coaching that catches joint-level, phase-specific flaws like knee valgus. Video is fused with 3D skeletal dynamics through region-aware anatomical masks; an expanding Mixture-of-Experts routes each motion via Gaussian Mahalanobis selection and learns new exercises class-incrementally without forgetting.</p>
+            <div class="proj__stat"><b>98.61%</b> Top-1 · best zero-shot <b>223.30 mm</b> MPJPE</div>
+            <div class="chips"><span>Vision-language</span><span>Mixture-of-Experts</span><span>3D pose</span></div>
+          </a>
+
+          <a class="proj proj--link reveal" data-cat="ml" href="https://multimodal-human-sensing.github.io/mind-dit/" target="_blank" rel="noopener">
+            <div class="proj__top"><span class="mono">02 / ML</span><span class="mono proj__go">Project page ↗</span></div>
+            <h3>MIND-DiT</h3>
+            <p>EEG-to-image synthesis with few-shot incremental learning, a unified neural-visual transformer for bidirectional attention, and a temporal masked autoencoder against catastrophic forgetting.</p>
+            <div class="proj__stat"><b>+15–20%</b> over U-Net baselines</div>
+            <div class="chips"><span>PyTorch</span><span>Transformers</span><span>Diffusion</span></div>
+          </a>
+
+          <a class="proj proj--link reveal" data-cat="systems" href="https://multimodal-human-sensing.github.io/atomsignet/" target="_blank" rel="noopener">
+            <div class="proj__top"><span class="mono">03 / SYS</span><span class="mono proj__go">Project page ↗</span></div>
+            <h3>AIEmoCare Platform</h3>
+            <p>State-funded multi-agent platform for autonomous affective support, with a 500 Hz TimescaleDB pipeline acting as agent memory over live biosignals.</p>
+            <div class="proj__stat"><b>500 Hz</b> real-time agent memory</div>
+            <div class="chips"><span>FastAPI</span><span>Kubernetes</span><span>TimescaleDB</span></div>
+          </a>
+
+          <article class="proj reveal" data-cat="systems">
+            <div class="proj__top"><span class="mono">04 / SYS</span><span class="mono">Dec 2025</span></div>
+            <h3>Raft Log Consensus</h3>
+            <p>Fault-tolerant distributed key/value store: leader election via randomised timeouts, AppendEntries log replication, disk persistence for crash recovery and conflict-term backtracking.</p>
+            <div class="proj__stat">Survives <b>leader crashes</b> &amp; <b>partitions</b></div>
+            <div class="chips"><span>Go</span><span>RPC</span><span>Consensus</span></div>
+          </article>
+
+          <a class="proj proj--more reveal" data-cat="all" href="https://github.com/ritik17499" target="_blank" rel="noopener">
+            <span class="mono">More work</span>
+            <h3>See everything on GitHub <span aria-hidden="true">↗</span></h3>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TOOLKIT ============ -->
+    <section class="section section--ruled" id="toolkit">
+      <div class="wrap split">
+        <header class="section__head reveal">
+          <span class="idx">06</span>
+          <h2>Toolkit</h2>
+          <p class="section__note">What I reach for, by layer.</p>
+        </header>
+        <div class="split__body stack">
+          <div class="stack__row reveal">
+            <h3 class="mono">Languages</h3>
+            <div class="chips chips--lg"><span>Python</span><span>Go</span><span>Java</span><span>TypeScript</span><span>JavaScript</span><span>SQL</span></div>
+          </div>
+          <div class="stack__row reveal">
+            <h3 class="mono">ML &amp; research</h3>
+            <div class="chips chips--lg"><span>PyTorch</span><span>Transformers</span><span>Diffusion models</span><span>Hugging Face</span><span>CLIP</span><span>Multi-agent systems</span></div>
+          </div>
+          <div class="stack__row reveal">
+            <h3 class="mono">Systems &amp; cloud</h3>
+            <div class="chips chips--lg"><span>Kubernetes</span><span>Docker</span><span>AWS</span><span>FastAPI</span><span>RPC</span><span>Linux</span></div>
+          </div>
+          <div class="stack__row reveal">
+            <h3 class="mono">Data</h3>
+            <div class="chips chips--lg"><span>TimescaleDB</span><span>MySQL</span><span>Redshift</span><span>Snowflake</span><span>Teradata</span><span>Cloudera · Hive</span></div>
+          </div>
+          <div class="stack__row reveal">
+            <h3 class="mono">Practice</h3>
+            <div class="chips chips--lg"><span>React</span><span>Maven</span><span>JUnit · Mockito</span><span>Git</span><span>Agile · Scrum</span></div>
           </div>
         </div>
       </div>
-    </section><section id="resume" class="resume">
-      <div class="container" data-aos="fade-up">
-        <div class="section-title">
-          <h2>Resume</h2>
-        </div>
-        <div class="row">
-          <div class="col-lg-6">
-            <h3 class="resume-title">Education</h3>
-            <div class="resume-item">
-              <h4>M.S. in Computer Science</h4>
-              <h5>Jan 2025 - Dec 2026</h5>
-              <p><em>University at Buffalo (SUNY), Buffalo, New York</em></p>
-              <p><strong>Coursework:</strong> Algorithms, Machine Learning, Computer Vision, Deep Learning, Distributed Systems, Data Models.</p>
-            </div>
-            <div class="resume-item">
-              <h4>B.Tech in Information Technology</h4>
-              <h5>July 2018 - June 2022</h5>
-              <p><em>Techno Main Salt Lake, Kolkata, India</em></p>
-              <p><strong>Coursework:</strong> Data structures, Algorithm analysis, DBMS, Operating Systems, Computer Network, Compiler Design.</p>
-            </div>
+    </section>
 
-            <h3 class="resume-title">Technical Skills</h3>
-            <div class="resume-item">
-              <ul>
-                <li><strong>Languages:</strong> Java, Go, Python, JavaScript</li>
-                <li><strong>Frameworks:</strong> Maven, Mockito, JUnit, Agile (Scrum)</li>
-                <li><strong>Technologies:</strong> Github, AWS, React, Docker, Kubernetes</li>
-                <li><strong>Operating Systems:</strong> Windows, Linux (Ubuntu)</li>
-                <li><strong>Databases:</strong> MySQL, Cloudera, Redshift, Teradata, Snowflake</li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <h3 class="resume-title">Professional Experience</h3>
-            <div class="resume-item">
-              <h4>Research Assistant</h4>
-              <h5>May 2025 - Present</h5>
-              <p><em>University at Buffalo</em></p>
-              <ul>
-                <li><strong>AIEmoCare (Agentic Architecture):</strong> Architected a state-funded production platform for autonomous affective support, integrating multi-agent reasoning loops with FastAPI and React (TypeScript), deployed via Kubernetes and Docker.</li>
-                <li><strong>Real-Time Perception &amp; Tool Execution:</strong> Engineered a 500Hz TimescaleDB time-series pipeline serving as state memory for agents, enabling autonomous evaluation of live biosignals to trigger low-latency intervention tools.</li>
-                <li><strong>Teaching Assistant:</strong> TA for CSE-474 Intro to Machine Learning.</li>
-              </ul>
-            </div>
-            <div class="resume-item">
-              <h4>Backend Engineer (Contract)</h4>
-              <h5>July 2024 - November 2024</h5>
-              <p><em>Mercor</em></p>
-              <ul>
-                <li>Achieved a 10% accuracy improvement on internal LLM benchmarks by implementing automated data curation and hyperparameter optimization scripts.</li>
-                <li>Streamlined development workflows by containerizing environments.</li>
-              </ul>
-            </div>
-            <div class="resume-item">
-              <h4>Full Stack Developer Trainee</h4>
-              <h5>Feb 2024 - April 2024</h5>
-              <p><em>Codelogicx</em></p>
-              <ul>
-                <li>Developed responsive e-commerce dashboards using React.js/Node.js, integrating RESTful APIs to reduce page load latency and translating Agile requirements into functional UI components.</li>
-              </ul>
-            </div>
-            <div class="resume-item">
-              <h4>Associate Software Engineer</h4>
-              <h5>July 2022 - December 2023</h5>
-              <p><em>Salesforce (formerly Informatica)</em></p>
-              <ul>
-                <li><strong>Cloudera Scanner:</strong> Engineered a Cloudera (Hive CDP) scanner from scratch with full unit/integration test coverage, integrated into the internal extraction tool.</li>
-                <li><strong>Redshift Scanner &amp; Maintenance:</strong> Boosted extraction efficiency by over 40% via WHERE clause optimization, added Materialized View and SSL encryption support, and delivered customer patches.</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="row mt-4">
-          <div class="col text-center">
-            <a href="https://drive.google.com/file/d/11T_LbtAM6Ln6sQmmbPbBvqRkMfymVMN6/view?usp=drive_link" target="_blank" class="btn btn-primary">View Full Resume</a>
-          </div>
-        </div>
-      </div>
-    </section><section id="publications" class="publications section light-background">
-      <div class="container" data-aos="fade-up">
-        <div class="section-title">
-          <h2>Publications &amp; Patents</h2>
-          <p>Peer-reviewed research in generative AI, biosignal modeling, and fair ML — including one filed US patent.</p>
-        </div>
+    <!-- ============ CONTACT ============ -->
+    <section class="contact" id="contact">
+      <div class="wrap">
+        <span class="idx reveal">07 — Contact</span>
+        <h2 class="contact__title reveal">Let's build something<br><em>that holds up.</em></h2>
+        <p class="contact__lede reveal">Open to full-time roles, research collaborations and internships. The fastest way to reach me is email.</p>
+        <a class="contact__mail reveal" href="mailto:ritikver@buffalo.edu">ritikver@buffalo.edu <span aria-hidden="true">→</span></a>
 
-        <div class="row gy-4">
-          <div class="col-lg-6">
-            <div class="pub-item">
-              <span class="pub-badge"><i class="bi bi-mortarboard"></i> Workshop Paper</span>
-              <h4>MIND-DiT: Multimodal Incremental Neural Diffusion Transformer for EEG-to-Image Synthesis</h4>
-              <p class="pub-venue">Air Force Research Laboratory (AFRL) Quantum AI4 Workshop · 2026</p>
-              <p>Personalized EEG-to-image synthesis framework featuring Adaptive Identity Evolution via Few-Shot Incremental Learning and a Unified Neural-Visual Transformer backbone, with a Continually Evolved Classifier to prevent catastrophic forgetting — a 15-20% accuracy gain over U-Net baselines.</p>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="pub-item">
-              <span class="pub-badge"><i class="bi bi-mic"></i> Oral Presentation</span>
-              <h4>AtomSigNet: Biosignal Diffusion with Markovian Reasoning</h4>
-              <p class="pub-venue">IEEE EMBC · 2026</p>
-              <p>Markovian Reasoning Engine with conditional diffusion to correct sensor artifacts and a Test-Time Scaling mechanism to dynamically adjust compute budget — 91% SOTA accuracy on WESAD/CASE (+14% F1) using 5x fewer labeled samples. Architecture is the subject of a filed US Patent.</p>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="pub-item">
-              <span class="pub-badge"><i class="bi bi-file-earmark-medical"></i> Conference Paper</span>
-              <h4>Data to Decision: Optimizing Cognitive Performance for the Operational Environment</h4>
-              <p class="pub-venue">MHSRS · 2026</p>
-              <p>Applied research translating biosignal-driven cognitive state models into decision-support tooling for operational environments, building on the AtomSigNet reasoning engine.</p>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="pub-item">
-              <span class="pub-badge"><i class="bi bi-journal-check"></i> Peer-Reviewed</span>
-              <h4>AFairDNet: Fair Multisensor Emotion Recognition System</h4>
-              <p class="pub-venue">IEEE BSN · 2025</p>
-              <p>Chain-of-Thought loop evaluating synthetic fairness via CLIP/Entropy scores to dynamically refactor prompts — outperforming SOTA baselines by 4% F1-score on WESAD using only 1.4% synthetic data.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section><section id="services" class="services">
-      <div class="container" data-aos="fade-up">
-        <div class="section-title">
-          <h2>Academic &amp; Systems Projects</h2>
-          <p>Selected research architectures and engineering builds — filter by focus area.</p>
-        </div>
-
-        <ul class="project-filters" data-aos="fade-up" data-aos-delay="50">
-          <li data-filter="all" class="filter-active">All</li>
-          <li data-filter="ml">Machine Learning</li>
-          <li data-filter="systems">Distributed Systems</li>
+        <ul class="contact__links reveal">
+          <li><span class="mono">Phone</span><span>+1 (631) 366-9859</span></li>
+          <li><span class="mono">LinkedIn</span><a href="https://linkedin.com/in/ritik-verma-749081175/" target="_blank" rel="noopener">ritik-verma ↗</a></li>
+          <li><span class="mono">GitHub</span><a href="https://github.com/ritik17499" target="_blank" rel="noopener">ritik17499 ↗</a></li>
+          <li><span class="mono">Résumé</span><a href="https://drive.google.com/file/d/11T_LbtAM6Ln6sQmmbPbBvqRkMfymVMN6/view?usp=drive_link" target="_blank" rel="noopener">View PDF ↗</a></li>
         </ul>
-
-        <div class="row">
-          <div class="col-md-6 d-flex align-items-stretch mt-4 project-col" data-category="ml" data-aos="zoom-in" data-aos-delay="100">
-            <div class="service-item position-relative w-100">
-              <div class="icon"><i class="bi bi-file-earmark-image"></i></div>
-              <h4 class="title">MIND-DiT</h4>
-              <p class="pub-venue">Python, PyTorch, Transformers · Jan 2026</p>
-              <p class="description">Personalized EEG-to-image synthesis framework with Adaptive Identity Evolution via Few-Shot Incremental Learning and a Unified Neural-Visual Transformer backbone for bidirectional attention, plus a Temporal Masked Autoencoder to prevent catastrophic forgetting.</p>
-              <div class="tech-tags">
-                <span>Python</span><span>PyTorch</span><span>Transformers</span><span>Diffusion Models</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6 d-flex align-items-stretch mt-4 project-col" data-category="ml" data-aos="zoom-in" data-aos-delay="150">
-            <div class="service-item position-relative w-100">
-              <div class="icon"><i class="bi bi-activity"></i></div>
-              <h4 class="title">AtomSigNet</h4>
-              <p class="pub-venue">Python, PyTorch, TCN · Jan 2026</p>
-              <p class="description">Markovian Reasoning Engine with conditional diffusion to correct sensor artifacts, a dynamic Test-Time Scaling mechanism, and a filed US Patent — 91% SOTA accuracy on WESAD/CASE with 5x fewer labeled samples.</p>
-              <div class="tech-tags">
-                <span>Python</span><span>PyTorch</span><span>TCN</span><span>Patent Filed</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6 d-flex align-items-stretch mt-4 project-col" data-category="ml" data-aos="zoom-in" data-aos-delay="200">
-            <div class="service-item position-relative w-100">
-              <div class="icon"><i class="bi bi-shuffle"></i></div>
-              <h4 class="title">AFairDNet</h4>
-              <p class="pub-venue">Python, PyTorch, Hugging Face · Aug 2025</p>
-              <p class="description">Fair multisensor emotion recognition system using a Chain-of-Thought loop to evaluate synthetic fairness via CLIP/Entropy scores and dynamically refactor prompts — outperformed SOTA baselines by 4% F1-score with 1.4% synthetic data.</p>
-              <div class="tech-tags">
-                <span>Python</span><span>PyTorch</span><span>Hugging Face</span><span>CLIP</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6 d-flex align-items-stretch mt-4 project-col" data-category="systems" data-aos="zoom-in" data-aos-delay="250">
-            <div class="service-item position-relative w-100">
-              <div class="icon"><i class="bi bi-diagram-3"></i></div>
-              <h4 class="title">Raft Log Consensus</h4>
-              <p class="pub-venue">Go, RPC · Dec 2025</p>
-              <p class="description">Fault-tolerant distributed key/value storage engine implementing leader election via randomized timeouts and log replication with AppendEntries RPCs across state machines, with disk persistence for crash recovery and conflict-term backtracking for log synchronization.</p>
-              <div class="tech-tags">
-                <span>Go</span><span>RPC</span><span>Distributed Consensus</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="row mt-4">
-          <div class="col text-center">
-            <a href="https://github.com/ritik17499" target="_blank" class="btn btn-outline-primary"><i class="bi bi-github"></i> View More on GitHub</a>
-          </div>
-        </div>
       </div>
-    </section><section id="contact" class="contact">
-      <div class="container" data-aos="fade-up">
-        <div class="section-title">
-          <h2>Contact</h2>
-          <p>Open to full-time roles, research collaborations, and internships — reach out anytime.</p>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-lg-4 col-md-6">
-            <a href="mailto:ritikver@buffalo.edu" class="email text-decoration-none">
-              <div class="info">
-                <div class="email">
-                  <i class="bi bi-envelope"></i>
-                  <h4>Email:</h4>
-                  <p>ritikver@buffalo.edu</p>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="info">
-              <div class="phone">
-                <i class="bi bi-phone"></i>
-                <h4>Mobile:</h4>
-                <p>+1 (631) 366-9859</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <a href="https://linkedin.com/in/ritik-verma-749081175/" target="_blank" class="email text-decoration-none">
-              <div class="info">
-                <div class="email">
-                  <i class="bi bi-linkedin"></i>
-                  <h4>Connect:</h4>
-                  <p>LinkedIn &amp; GitHub</p>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section></main>
+    </section>
+  </main>
 
-  <footer id="footer" class="footer position-relative light-background">
-    <div class="container">
-      <div class="copyright text-center">
-        <p><span>Thank You for Stopping By</span></p>
-      </div>
+  <footer class="foot">
+    <div class="wrap foot__row">
+      <span>© <span id="year">2026</span> Ritik Verma</span>
+      <span class="mono">Thanks for stopping by.</span>
+      <a href="#top" class="mono">Back to top ↑</a>
     </div>
   </footer>
 
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <div id="preloader"></div>
-
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/typed.js/typed.umd.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-
-  <script src="assets/js/main.js"></script>
-
+  <script src="assets/js/site.js"></script>
 </body>
-
 </html>
